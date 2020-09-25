@@ -1,0 +1,20 @@
+{
+  "name": "sample-fluentui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Oleksandr Fediashov",
+  "license": "MIT",
+  "dependencies": {
+    "@fluentui/react-northstar": "^0.51.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "serve": "^11.3.2",
+    "webpack": "^4.44.2",
+    "webpack-bundle-analyzer": "^3.9.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "scripts": {
+    "build": "webpack",
+    "serve": "serve ./"
+  }
+}
