@@ -6,6 +6,7 @@
   "license": "MIT",
   "dependencies": {
     "@fluentui/react-northstar": "^0.51.2",
+    "cross-env": "^7.0.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "serve": "^11.3.2",
@@ -14,7 +15,9 @@
     "webpack-cli": "^3.3.12"
   },
   "scripts": {
-    "build": "webpack",
+    "build": "cross-env WEBPACK_ENV=production webpack",
+    "build:dev": "webpack",
+    "build:debug": "cross-env WEBPACK_DEBUG=true yarn build",
     "serve": "serve ./"
   }
 }
